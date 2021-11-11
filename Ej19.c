@@ -1,5 +1,5 @@
 /*
-Programa: Ej18.c
+Programa: Ej19.c
 Descripción: Realice un programa en C que rellene una matriz de 3x3 y muestre su traspuesta (la traspuesta se consigue
 intercambiando filas por columnas y viceversa).
 Autor: Gustavo Barrajón
