@@ -1,7 +1,7 @@
 /*
 Programa: Ej17.c
 Descripción: Realice un programa en C que muestre los primeros 100 números de izquierda a derecha usando un array de dos
-dimensiones, la última fila a mostrará la suma de sus respectivas columnas.
+dimensiones, la última fila  mostrará la suma de sus respectivas columnas.
 Autor: Gustavo Barrajón
 Modificó:
 */

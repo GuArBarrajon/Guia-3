@@ -7,6 +7,8 @@ Modificó:
 */
 
 #include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
 #define MAX 100
 
 void cargar(int v[]);
@@ -17,17 +19,20 @@ void main()
 {
     int vector[MAX];
     cargar(vector);
+    printf("Numeros del 1 al 100 aleatorios\n");
+    imprimirVec(vector);
     ordenamiento(vector);
-    printf("Numeros del 1 al 100 en orden descendente\n");
+    printf("\nNumeros del 1 al 100 en orden descendente\n");
     imprimirVec(vector);
 }
 
 void cargar(int v[])
 {
-    int num=1;
+    srand(time(NULL));
+    
     for(int i=0; i<MAX; i++)
     {
-        v[i]=num++;
+        v[i]=1+rand()%MAX;
     }
 }
 
