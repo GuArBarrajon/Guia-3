@@ -11,13 +11,15 @@ Modificó:
 
 void cargar(int v[]);
 void busqueda(int v[]);
+void imprimirVec(int v[]);
 
 void main()
 {
     int array[MAX];
     cargar(array);
-    busqueda(array);
+    printf("Vector ingresado:\n");
     imprimirVec(array);
+    busqueda(array);
 }
 
 void cargar(int v[])
@@ -34,34 +36,31 @@ void cargar(int v[])
 
 void busqueda(int v[])
 {
-    int aux;
-    for(int i=0; i<MAX-1; i++)
-    {
-        for(int j=i+1; j<MAX; j++)
-        {
-            if(v[i]>v[j])
-            {
-                aux=v[i];
-                v[i]=v[j];
-                v[j]=aux;
-            }
-        }
-    }
-    int numero, flag=0;
-    printf("Ingrese un numero a buscar: ");
+    int i, numero, flag=0;
+    printf("\nIngrese un numero a buscar: ");
     scanf("%d", &numero);
-    for(int i=0; i<MAX; i++)
+    for(i=0; i<MAX; i++)
     {
         if(numero==v[i])
+        {
+            flag=1;
+            break;
+        }
+    }
+    if(flag==1)
+    {
         printf("Se encontro el numero en la posicion: %d\n", i);
-        flag=1;
-        if(flag==0)
-            printf("No se encontró el numero\n");
+    }
+    else
+    {
+        printf("No se encontro el numero\n");
     }
 }
 
 void imprimirVec(int v[])
 {
     for(int i=0; i<MAX; i++)
+    {
         printf("%d - ", v[i]);
+    }
 }

@@ -48,7 +48,7 @@ void imprimirMatriz(int v[3][3])
     {
         for(int j=0; j<3; j++)      
         {
-            printf("%d  ", v[i][j]);
+            printf("%d\t", v[i][j]);
         }
         printf("\n");
     }
@@ -60,7 +60,7 @@ void traspuesta(int v[3][3])
     {                  
         for(int j=0; j<3; j++)      
         {
-            printf("%d  ", v[j][i]);
+            printf("%d\t", v[j][i]);
         }
         printf("\n");
     }  

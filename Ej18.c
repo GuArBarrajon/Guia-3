@@ -42,7 +42,7 @@ void imprimirMatriz(int v[5][10])
     {
         for(int j=0; j<10; j++)      
         {
-            printf("%d  ", v[i][j]);
+            printf("%d\t", v[i][j]);
         }
         printf("\n");
     }
